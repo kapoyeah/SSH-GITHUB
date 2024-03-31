@@ -2,7 +2,7 @@
 
 read -p "Enter your email:" email
 
-ssh-keygen -t ed25519 -C "$email"
+ssh-keygen -t ed25519 -C "${email}"
 
 eval "$(ssh-agent -s)"
 
