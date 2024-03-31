@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Enter your email: " email
+read -p "Enter your email:" email
 
 ssh-keygen -t ed25519 -C "$email"
 
