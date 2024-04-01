@@ -14,8 +14,9 @@ EOF
 
 
 ssh-add ~/.ssh/id_ed25519
-
+echo ""
 cat ~/.ssh/id_ed25519.pub
+echo ""
 read -p "Copy SSH key to GitHub. "
 ssh -T git@github.com
 
