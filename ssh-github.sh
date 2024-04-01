@@ -21,5 +21,6 @@ echo ""
 
 read -p "Copy SSH key to GitHub. "
 #Test if working
+
 ssh -T git@github.com
 
