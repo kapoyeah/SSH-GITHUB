@@ -12,11 +12,12 @@ Host *
    IdentityFile ~/.ssh/id_ed25519
 EOF
 
-
 ssh-add ~/.ssh/id_ed25519
+#Display Key to Terminal
 echo ""
 cat ~/.ssh/id_ed25519.pub
 echo ""
+
 read -p "Copy SSH key to GitHub. "
 ssh -T git@github.com
 
